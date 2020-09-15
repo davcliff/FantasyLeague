@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LeagueMembersComponent } from './league-members/league-members.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeagueMembersComponent
+    LeagueMembersComponent,
+    MemberDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
