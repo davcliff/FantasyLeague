@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Member } from '../member';
 import { MemberService } from '../member.service';
-import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-league-members',
@@ -12,20 +11,12 @@ export class LeagueMembersComponent implements OnInit {
 
   members: Member[];
 
-  selectedMember: Member;
-
   getMembers(): void {
     this.memberService.getMembers()
         .subscribe(members => this.members = members);
   }
 
-  onSelect(member: Member): void {
-    this.selectedMember = member;
-    this.messageService.add(`MembersComponent: Selected member id=${member.id}`);
-  }
-
-  constructor(private memberService: MemberService,
-              private messageService: MessageService) { }
+  constructor(private memberService: MemberService) { }
 
   ngOnInit(): void {
     this.getMembers();

@@ -15,6 +15,11 @@ export class MemberService {
     return of(MEMBERS);
   }
 
+  getMember(id: number): Observable<Member> {
+    this.messageService.add(`MemberService: fetched member id=${id}`);
+    return of(MEMBERS.find(member => member.id === id));
+  }
+
   // Need to adjust the members to come from a DB through http
 
   constructor(private messageService: MessageService) { }
