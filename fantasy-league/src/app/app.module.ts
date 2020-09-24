@@ -14,6 +14,10 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { LeagueMembersComponent } from './league-members/league-members.component';
 import { MemberSearchComponent } from './member-search/member-search.component';
 import { MessagesComponent } from './messages/messages.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HistoryComponent } from './history/history.component';
+import { AboutLeagueComponent } from './about-league/about-league.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { MessagesComponent } from './messages/messages.component';
     MemberDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    MemberSearchComponent
+    MemberSearchComponent,
+    HeaderComponent,
+    FooterComponent,
+    HistoryComponent,
+    AboutLeagueComponent
   ],
   imports: [
     BrowserModule,

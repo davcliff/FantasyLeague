@@ -1,7 +1,17 @@
-<h1>{{title}}</h1>
-<nav>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/members">League Members</a>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+<div class="body">
+  <div class="container header">
+    <div class="logo">
+      <h1><a href="/home">{{title}}</a></h1>
+    </div>
+    <div class="header-right">
+      <nav>
+        <a class="nav-item" routerLink="/dashboard">Dashboard</a>
+        <a class="nav-item" routerLink="/members">League Members</a>
+        <a class="nav-item" routerLink="/history">History</a>
+        <a class="nav-item" routerLink="/about">About Us</a>
+      </nav>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
