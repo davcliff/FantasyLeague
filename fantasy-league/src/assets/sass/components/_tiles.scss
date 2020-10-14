@@ -46,7 +46,6 @@
 					));
 					content: '';
 					display: block;
-					position: absolute;
 					top: 0;
 					left: 0;
 					width: 100%;
@@ -61,7 +60,6 @@
 					@include vendor('transition', 'opacity #{$duration} #{$ease}');
 					content: '';
 					display: block;
-					position: absolute;
 					top: 0;
 					left: 0;
 					width: 100%;
