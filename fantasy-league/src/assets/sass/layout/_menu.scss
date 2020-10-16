@@ -143,9 +143,7 @@
 
 	body.is-menu-visible {
 		#wrapper {
-			@include vendor('pointer-events', 'none');
 			cursor: default;
-			opacity: 0.25;
 		}
 
 		#menu {
