@@ -9,13 +9,16 @@
 </div> -->
 
 <!-- Wrapper -->
-<div id="wrapper">
 
-  <!-- Main -->
-    <div id="main">
-      <div class="inner">
-        Need to make this into the current scores component.
-      </div>
-    </div>
+Need to make this into the current scores component.
+
+<div class="scoreboard">
+  <div *ngFor="let member of members">
+    <h4>{{member.name}}</h4>
+  </div>
+  <div>
+    {{matchups}}
+  </div>
 </div>
+
 
