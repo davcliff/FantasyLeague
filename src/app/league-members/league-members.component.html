@@ -1,137 +1,99 @@
-<!-- <h2>Active League Members</h2>
-<ul class="members">
-  <li *ngFor="let member of members">
-    <a routerLink="/detail/{{member.id}}">
-      <span class="badge">{{member.id}}</span> {{member.name}}
-    </a>
-    <button class="delete" title="delete member"
-      (click)="delete(member)">x</button>
-  </li>
-</ul>
-
-<div>
-  <label>Member name:
-    <input #memberName />
-  </label>
-  <button (click)="add(memberName.value); memberName.value=''">
-    add
-  </button>
-</div> -->
-
 <h2>Active League Members</h2>
 
-<section class="tiles">
-  <article class="">
-    <span class="image">
-      <img src="assets/images/spitz.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Spitz</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style2">
-    <span class="image">
-      <img src="assets/images/cliff.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Cliff</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style3">
-    <span class="image">
-      <img src="assets/images/mawby.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Mawby</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style4">
-    <span class="image">
-      <img src="assets/images/breezy.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Breezy</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style5">
-    <span class="image">
-      <img src="assets/images/buc.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Buc</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style6">
-    <span class="image">
-      <img src="assets/images/cole.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Cole</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style2">
-    <span class="image">
-      <img src="assets/images/connor.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Connor</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style3">
-    <span class="image">
-      <img src="assets/images/paul.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Paul</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style1">
-    <span class="image">
-      <img src="assets/images/stasch.jpg" alt="" />
-    </span>
-    <a>
-      <h2>Stasch</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-  <article class="style5">
-    <span class="image">
-      <img src="assets/images/sved.png" alt="" />
-    </span>
-    <a>
-      <h2>Sved</h2>
-      <div class="content">
-        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-      </div>
-    </a>
-  </article>
-</section>
+<ngb-carousel>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/spitz.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Spitz</h3>
+      <p>Consistently dominant in the League. Owner of Four titles.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/cliff.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Cliff</h3>
+      <p>Original poop bowl champion. Can always count on him shooting himself in the foot. Drowning in pussy.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/mawby.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Mawby</h3>
+      <p>Only owner of both a championship and a shit crown. Lets his spouse run his team.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/breezy.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Brad</h3>
+      <p>King of choking. The Buffalo Bills of Fantasy Football.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/buc.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Buc</h3>
+      <p>Three time poop title winner. Panic jumps out of situations.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/cole.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Cole</h3>
+      <p>Newer to the league. Once missed the draft because it overlapped with weekly BINGO.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/connor.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Connor</h3>
+      <p>Will reliably beat you when it matters, but never anyone else.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/paul.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Paul</h3>
+      <p>There's too much to put into a single tile. This dude is getting his own section.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/stasch.jpg">
+    </div>
+    <div class="carousel-caption">
+      <h3>Stasch</h3>
+      <p>Terrifying when he pays attention to his roster. Will definitely out drink you.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/images/sved.png">
+    </div>
+    <div class="carousel-caption">
+      <h3>Sved</h3>
+      <p>The prodigal son realized why he originally left.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+
 <br/>
 <h2>Retired League Members</h2>
 

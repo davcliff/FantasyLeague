@@ -12,6 +12,10 @@ use `node server.js` as the command for running on production.
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Styling
+
+I am trying to keep this as close to bootstrap as possible, so use ng-bootstrap wherever possible. https://ng-bootstrap.github.io/#/home
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
